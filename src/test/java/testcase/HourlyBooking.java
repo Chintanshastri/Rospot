@@ -63,7 +63,6 @@ public class HourlyBooking extends ManualLogindata {
 		}
 		WebElement bookbutton = driver.findElement(By.id("claim_SpotID"));
 		if (bookbutton.isDisplayed()) {
-			Thread.sleep(2000);
 			bookbutton.click();
 		}
 
