@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test name="GotoMap(failed)">
+    <classes>
+      <class name="testcase.ClaimFunctionalityforMap">
+        <methods>
+          <include name="zoneoption"/>
+          <include name="selectspot"/>
+          <include name="setup"/>
+          <include name="cancelbookingbutton"/>
+          <include name="clickgotomap"/>
+          <include name="bookspacebutton"/>
+        </methods>
+      </class> <!-- testcase.ClaimFunctionalityforMap -->
+    </classes>
+  </test> <!-- GotoMap(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

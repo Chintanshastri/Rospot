@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-26T15:42:43 IST" name="Default suite" finished-at="2024-12-26T15:44:05 IST" duration-ms="82051">
+    <groups>
+    </groups>
+    <test started-at="2024-12-26T15:42:43 IST" name="Default test" finished-at="2024-12-26T15:44:05 IST" duration-ms="82051">
+      <class name="testcase.HourlyBooking">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.HourlyBooking@1989e8c6]" started-at="2024-12-26T15:42:43 IST" name="setup" finished-at="2024-12-26T15:42:53 IST" duration-ms="9804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openbrowse()[pri:0, instance:testcase.HourlyBooking@1989e8c6]" started-at="2024-12-26T15:42:53 IST" name="openbrowse" finished-at="2024-12-26T15:43:26 IST" duration-ms="32997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowse -->
+        <test-method signature="hourlybooking()[pri:1, instance:testcase.HourlyBooking@1989e8c6]" started-at="2024-12-26T15:43:26 IST" name="hourlybooking" finished-at="2024-12-26T15:43:47 IST" duration-ms="20733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hourlybooking -->
+        <test-method signature="selecttime()[pri:2, instance:testcase.HourlyBooking@1989e8c6]" started-at="2024-12-26T15:43:47 IST" name="selecttime" finished-at="2024-12-26T15:44:05 IST" duration-ms="18295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecttime -->
+      </class> <!-- testcase.HourlyBooking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
