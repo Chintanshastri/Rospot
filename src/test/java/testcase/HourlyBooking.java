@@ -41,7 +41,6 @@ public class HourlyBooking extends ManualLogindata {
 		Thread.sleep(3000);
 		logger.info("Click book button.....");
 		driver.findElement(By.id("SpotID_blank")).click();
-
 	}
 
 	@Test(priority = 2)
