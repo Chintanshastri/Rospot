@@ -21,7 +21,7 @@ public class GetSpotDetails extends Browser {
 			String spotId = active.getAttribute("id"); // Get ID attribute
 			System.out.println("Spot ID: " + spotId + ", Spot Text: " + actualName);
 		}
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		System.out.println("----------Inactive Spot----------------");
 		List<WebElement> inactivespot = driver.findElements(
 				By.xpath("//div[contains(@class, 'grid-item') and not(contains(@class, 'SpotID_blank'))]"));
@@ -31,5 +31,4 @@ public class GetSpotDetails extends Browser {
 			System.out.println("Spot ID: " + spotId + ", Spot Text: " + actualName);
 		}
 	}
-
 }
