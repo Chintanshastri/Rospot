@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.HourlyBooking">
+      <class name="testcase.ClaimFunctionalityforMap">
         <methods>
+          <include name="cancelbookingbutton"/>
           <include name="setup"/>
-          <include name="hourlybooking"/>
+          <include name="bookspacebutton"/>
         </methods>
-      </class> <!-- testcase.HourlyBooking -->
+      </class> <!-- testcase.ClaimFunctionalityforMap -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
