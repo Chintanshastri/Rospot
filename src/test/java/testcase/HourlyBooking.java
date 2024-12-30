@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import base.CalendarScreen;
+import base.GetSpotDetails;
 import base.ManualLogindata;
 
 public class HourlyBooking extends ManualLogindata {
@@ -16,8 +17,9 @@ public class HourlyBooking extends ManualLogindata {
 	private final CalendarScreen selectdateforbooking = new CalendarScreen();
 	private static final Logger logger = LogManager.getLogger(HourlyBooking.class);
 	private final ClaimFunctionalityforMap gotomap = new ClaimFunctionalityforMap();
-	private final ClaimFunctionalityforMap bookspot = new ClaimFunctionalityforMap();
 	private final ClaimFunctionalityforMap selectspot = new ClaimFunctionalityforMap();
+	private final GetSpotDetails spotdetails = new GetSpotDetails();
+	
 
 	@Test(priority = 0)
 	public void openbrowse() throws InterruptedException {
@@ -33,13 +35,12 @@ public class HourlyBooking extends ManualLogindata {
 		logger.info("Click goto map button.....");
 		gotomap.clickgotomap();
 		logger.info("book spot.....");
-		bookspot.spotdetails();
+		spotdetails.Activespotdetails();
 		logger.info("Select spot for booking.....");
 		selectspot.selectspot();
 		Thread.sleep(3000);
 		logger.info("Click book button.....");
 		driver.findElement(By.id("SpotID_blank")).click();
-
 	}
 
 	@Test(priority = 2)
@@ -62,11 +63,9 @@ public class HourlyBooking extends ManualLogindata {
 			System.out.println("----------Booking time slots not available----------------");
 		}
 		WebElement bookbutton = driver.findElement(By.id("claim_SpotID"));
-		if (bookbutton.isDisplayed()) {
-			Thread.sleep(2000);
+		if (bookbutton.isDisplayed()) {	
 			bookbutton.click();
-		}
-
+		}	
 		else {
 			System.out.println("Book space button is not available, so click close button..........");
 			driver.findElement(By

@@ -2,6 +2,7 @@ package testcase;
 
 import base.Browser;
 import base.CalendarScreen;
+import base.GetSpotDetails;
 import base.ManualLogindata;
 
 import java.time.Duration;
@@ -18,6 +19,7 @@ public class ClaimFunctionalityforMap extends Browser {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	private final ManualLogindata login = new ManualLogindata();
 	private final CalendarScreen selectdateforbooking = new CalendarScreen();
+	private final GetSpotDetails spotdetails = new GetSpotDetails();
 	@Test(priority = 0)
 	public void manuallogin() throws InterruptedException {
 		login.reusableMethod();
@@ -89,27 +91,7 @@ public class ClaimFunctionalityforMap extends Browser {
 
 	@Test(priority = 5)
 	public void spotdetails() throws InterruptedException {
-		System.out.println("----------Spot Details----------------");
-		List<WebElement> totalspot = driver.findElements(By.xpath("//div[contains(@class, 'grid-item')]"));
-		int spotcount = totalspot.size();
-		System.out.println("Total Spot Counts= " + spotcount);
-		System.out.println("----------Active Spot----------------");
-		List<WebElement> activespot = driver
-				.findElements(By.xpath("//div[contains(@class, 'grid-item') and contains(@class, 'SpotID_blank')]"));
-		for (WebElement active : activespot) {
-			String actualName = active.getText(); // Get visible text
-			String spotId = active.getAttribute("id"); // Get ID attribute
-			System.out.println("Spot ID: " + spotId + ", Spot Text: " + actualName);
-		}
-		Thread.sleep(5000);
-		System.out.println("----------Inactive Spot----------------");
-		List<WebElement> inactivespot = driver.findElements(
-				By.xpath("//div[contains(@class, 'grid-item') and not(contains(@class, 'SpotID_blank'))]"));
-		for (WebElement inactive : inactivespot) {
-			String actualName = inactive.getText(); // Get visible text
-			String spotId = inactive.getAttribute("id"); // Get ID attribute
-			System.out.println("Spot ID: " + spotId + ", Spot Text: " + actualName);
-		}
+		spotdetails.Activespotdetails();
 	}
 
 	@Test(priority = 6)
@@ -119,7 +101,7 @@ public class ClaimFunctionalityforMap extends Browser {
 				.findElement(By.xpath("//div[contains(@class, 'grid-item') and contains(@class, 'SpotID_blank')]"));
 		String actualNamespot = spotselect.getText();
 		String expectedName = "XZ-1";
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		// Compare the names
 		if (actualNamespot.equals(expectedName)) {
 			spotselect.click();
