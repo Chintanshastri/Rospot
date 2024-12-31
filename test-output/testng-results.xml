@@ -1,67 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-30T15:17:10 IST" name="Default suite" finished-at="2024-12-30T15:19:06 IST" duration-ms="116013">
+  <suite started-at="2024-12-31T15:33:52 IST" name="Default suite" finished-at="2024-12-31T15:35:22 IST" duration-ms="89934">
     <groups>
     </groups>
-    <test started-at="2024-12-30T15:17:10 IST" name="Default test" finished-at="2024-12-30T15:19:06 IST" duration-ms="116013">
-      <class name="testcase.ClaimFunctionalityforMap">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:10 IST" name="setup" finished-at="2024-12-30T15:17:15 IST" duration-ms="5657" status="PASS">
+    <test started-at="2024-12-31T15:33:52 IST" name="Default test" finished-at="2024-12-31T15:35:22 IST" duration-ms="89934">
+      <class name="testcase.HourlyBooking">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.HourlyBooking@314a31b0]" started-at="2024-12-31T15:33:52 IST" name="setup" finished-at="2024-12-31T15:34:02 IST" duration-ms="10001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="manuallogin()[pri:0, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:15 IST" name="manuallogin" finished-at="2024-12-30T15:17:25 IST" duration-ms="10086" status="PASS">
+        <test-method signature="openbrowse()[pri:0, instance:testcase.HourlyBooking@314a31b0]" started-at="2024-12-31T15:34:02 IST" name="openbrowse" finished-at="2024-12-31T15:34:45 IST" duration-ms="43773" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manuallogin -->
-        <test-method signature="zoneoption()[pri:1, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:25 IST" name="zoneoption" finished-at="2024-12-30T15:17:26 IST" duration-ms="261" status="PASS">
+        </test-method> <!-- openbrowse -->
+        <test-method signature="hourlybooking()[pri:1, instance:testcase.HourlyBooking@314a31b0]" started-at="2024-12-31T15:34:45 IST" name="hourlybooking" finished-at="2024-12-31T15:35:08 IST" duration-ms="22785" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zoneoption -->
-        <test-method signature="dashboard()[pri:2, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:26 IST" name="dashboard" finished-at="2024-12-30T15:17:37 IST" duration-ms="11154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboard -->
-        <test-method signature="selectdate()[pri:3, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:37 IST" name="selectdate" finished-at="2024-12-30T15:17:47 IST" duration-ms="10225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectdate -->
-        <test-method signature="clickgotomap()[pri:4, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:47 IST" name="clickgotomap" finished-at="2024-12-30T15:17:53 IST" duration-ms="5514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickgotomap -->
-        <test-method signature="spotdetails()[pri:5, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:53 IST" name="spotdetails" finished-at="2024-12-30T15:17:58 IST" duration-ms="5649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- spotdetails -->
-        <test-method signature="selectspot()[pri:6, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:17:58 IST" name="selectspot" finished-at="2024-12-30T15:18:03 IST" duration-ms="5112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectspot -->
-        <test-method signature="bookspacebutton()[pri:7, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:18:03 IST" name="bookspacebutton" finished-at="2024-12-30T15:18:18 IST" duration-ms="15121" status="FAIL">
+        </test-method> <!-- hourlybooking -->
+        <test-method signature="selecttime()[pri:2, instance:testcase.HourlyBooking@314a31b0]" started-at="2024-12-31T15:35:08 IST" name="selecttime" finished-at="2024-12-31T15:35:22 IST" duration-ms="13299" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[element not interactable: element has zero size
   (Session info: chrome=131.0.6778.205)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [972ab061421a646909b4aa0733bb16cf, clickElement {id=f.3DD9B56040DF62E7955E705C344EE7ED.d.842D2B592420A34A76CA489947ACD1F8.e.426}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60980/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (972ab061421a646909b4aa0733bb16cf)] -> xpath: //button[@id='claim_SpotID']]
-Session ID: 972ab061421a646909b4aa0733bb16cf]]>
+Command: [837b7d6f87987db0f2daa43d17014f14, clickElement {id=f.8B0EED1D26343300D96090AD2C46E65F.d.609578724355456DF4EDFD8AD5F56A29.e.391}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51008/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (837b7d6f87987db0f2daa43d17014f14)] -> xpath: //div[contains(@class, 'image-div')]]
+Session ID: 837b7d6f87987db0f2daa43d17014f14]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: element has zero size
   (Session info: chrome=131.0.6778.205)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [972ab061421a646909b4aa0733bb16cf, clickElement {id=f.3DD9B56040DF62E7955E705C344EE7ED.d.842D2B592420A34A76CA489947ACD1F8.e.426}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60980/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (972ab061421a646909b4aa0733bb16cf)] -> xpath: //button[@id='claim_SpotID']]
-Session ID: 972ab061421a646909b4aa0733bb16cf
+Command: [837b7d6f87987db0f2daa43d17014f14, clickElement {id=f.8B0EED1D26343300D96090AD2C46E65F.d.609578724355456DF4EDFD8AD5F56A29.e.391}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51008/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (837b7d6f87987db0f2daa43d17014f14)] -> xpath: //div[contains(@class, 'image-div')]]
+Session ID: 837b7d6f87987db0f2daa43d17014f14
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -74,7 +54,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at testcase.ClaimFunctionalityforMap.bookspacebutton(ClaimFunctionalityforMap.java:116)
+at testcase.HourlyBooking.selecttime(HourlyBooking.java:82)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -106,76 +86,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookspacebutton -->
-        <test-method signature="cancelbookingbutton()[pri:8, instance:testcase.ClaimFunctionalityforMap@1989e8c6]" started-at="2024-12-30T15:18:18 IST" name="cancelbookingbutton" finished-at="2024-12-30T15:19:06 IST" duration-ms="47131" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=131.0.6778.205)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [972ab061421a646909b4aa0733bb16cf, clickElement {id=f.3DD9B56040DF62E7955E705C344EE7ED.d.842D2B592420A34A76CA489947ACD1F8.e.427}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60980/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (972ab061421a646909b4aa0733bb16cf)] -> xpath: //button[@id='release_SpotID']]
-Session ID: 972ab061421a646909b4aa0733bb16cf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.205)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [972ab061421a646909b4aa0733bb16cf, clickElement {id=f.3DD9B56040DF62E7955E705C344EE7ED.d.842D2B592420A34A76CA489947ACD1F8.e.427}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60980/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (972ab061421a646909b4aa0733bb16cf)] -> xpath: //button[@id='release_SpotID']]
-Session ID: 972ab061421a646909b4aa0733bb16cf
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at testcase.ClaimFunctionalityforMap.cancelbookingbutton(ClaimFunctionalityforMap.java:142)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cancelbookingbutton -->
-      </class> <!-- testcase.ClaimFunctionalityforMap -->
+        </test-method> <!-- selecttime -->
+      </class> <!-- testcase.HourlyBooking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
