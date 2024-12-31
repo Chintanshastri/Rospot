@@ -1,5 +1,6 @@
 package testcase;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +20,7 @@ public class HourlyBooking extends ManualLogindata {
 	private final ClaimFunctionalityforMap gotomap = new ClaimFunctionalityforMap();
 	private final ClaimFunctionalityforMap selectspot = new ClaimFunctionalityforMap();
 	private final GetSpotDetails spotdetails = new GetSpotDetails();
+	
 	
 
 	@Test(priority = 0)
@@ -47,6 +49,7 @@ public class HourlyBooking extends ManualLogindata {
 	public void selecttime() throws InterruptedException {
 		Thread.sleep(3000);
 		// Locate all time slots
+		
 		WebElement timeSlot = driver.findElement(By.id("spotBookingPeriodSlot"));
 		if (timeSlot.isDisplayed() && timeSlot.isEnabled()) {
 			List<WebElement> timeSlots = driver.findElements(By.xpath("//select[@id='spotBookingPeriodSlot']"));
@@ -57,6 +60,7 @@ public class HourlyBooking extends ManualLogindata {
 				if (!time.equalsIgnoreCase("Unavailable")) { // Skip unavailable slots
 					System.out.println(time);
 					timeSlot.click();
+					
 				}
 			}
 		} else {
@@ -65,6 +69,7 @@ public class HourlyBooking extends ManualLogindata {
 		WebElement bookbutton = driver.findElement(By.id("claim_SpotID"));
 		if (bookbutton.isDisplayed()) {	
 			bookbutton.click();
+				
 		}	
 		else {
 			System.out.println("Book space button is not available, so click close button..........");
@@ -72,5 +77,23 @@ public class HourlyBooking extends ManualLogindata {
 					.xpath("//div[@class='modal-dialog modal-md']//button[@type='button'][normalize-space()='Close']"))
 					.click();
 		}
+		Thread.sleep(10000);
+		System.out.println("----------Again click spot----------------");
+		driver.findElement(By.xpath("//div[contains(@class, 'image-div')]")).click();
+		logger.info("Click cancel booking button.....");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		System.out.println("----------Booking Cancel----------------");
+		// Find all booked spots
+		List<WebElement> bookedSpots = driver
+				.findElements(By.xpath("//div[contains(@class, 'grid-item') and contains(@class, 'SpotID_assigned')]"));
+		// Check if there are any booked spots
+		if (bookedSpots.size() > 0) {
+			bookedSpots.get(0).click();
+		} else {
+			System.out.println("No booked spots found.");
+		}
+		Thread.sleep(7000);
+		driver.findElement(By.xpath("//button[@id='release_SpotID']")).click();
 	}
 }
